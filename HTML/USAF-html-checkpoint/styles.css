@@ -62,14 +62,18 @@
     font-size: larger;
 
 }
+.inputForm {
+    height: 30px;
+}
 #emailtext {
     grid-column: 2;
     grid-row: 1;
     
 }
 #passtext {
+    padding-top: 40px;
     grid-column: 2;
-    grid-row: 3;
+    grid-row: 4;
 
 }
 #emailinput {
@@ -79,5 +83,13 @@
 }
 #passinput {
     grid-column: 2;
-    grid-row: 4;
+    grid-row: 5;
+}
+#LoginButtonInForm {
+    margin-top: 40px;
+    grid-column: 2;
+    grid-row: 6;
+    
+    
+
 }
