@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>GMDB</title>
+        <link rel="stylesheet" href="./styles.css">
+        <script src="./movieInfo.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <header>
+            <div class="Banner">
+                <div>
+                    
+                    <button class="TopButtons" id="GMDB">GMDB</button>
+                    <button class="TopButtons" id="HomeButton" onclick='window.location.href = "homepage.html" '>Home</button>
+                    <button class="TopButtons" id="LoginButton" onclick='window.location.href = "loginpage.html" '>Login</button>
+                    
+                </div>
+                <div class="SearchBar">
+                    <input type="text" placeholder="Search" name="search">
+                    <button id='SearchButton' type="submit">Search</button>
+                </div>
+            </div>
+            <div class="BackBar" id='Back2results'>
+                <script>
+                    let y = document.getElementById('Back2results');
+                    y.style.display = "none"
+                </script>
+                <button onclick="lolezworkaround()">Back to Movie List</button>
+                
+            </div>
+                <div class='movietemplate'>
+                    
+                    <img class='moviecovers' id="1" src="./Movies/1.png" onclick="{getMovieInfo('1')}"/>
+                    <img class='moviecovers' id="2" src="./Movies/2.png" onclick="{getMovieInfo('2')}"/>
+                    <img class='moviecovers' id="3" src="./Movies/3.png" onclick="{getMovieInfo('3')}"/>
+                    <img class='moviecovers' id="4" src="./Movies/4.png" onclick="{getMovieInfo('4')}"/>
+                    <img class='moviecovers' id="5" src="./Movies/5.png" onclick="{getMovieInfo('5')}"/>
+                    <img class='moviecovers' id="6" src="./Movies/6.png" onclick="{getMovieInfo('6')}"/>
+                    <img class='moviecovers' id="7" src="./Movies/7.png" onclick="{getMovieInfo('7')}"/>
+                </div>
+                <div id="LeaveAComment">
+                    <script>let z = document.getElementById('LeaveAComment');
+                        z.style.display = "none"</script>
+                    <form id="commentForm">
+                        <label>Leave A Comment:</label>
+                        <input type="text" />
+                        <button type="submit">Submit</button>
+
+                    </form>
+                </div>
+
+        </header>
+    </body>
+</html>
